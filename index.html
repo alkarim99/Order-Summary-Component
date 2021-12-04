@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap" rel="stylesheet">
+  
+  <title>Frontend Mentor | Order summary card</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    body{
+      margin: 0;
+      padding: 0;
+      font-family: 'Red Hat Display', sans-serif;
+      font-size: 16px;
+      background-color: hsl(225, 100%, 94%);
+      background-image: url(images/pattern-background-desktop.svg);
+      background-repeat: no-repeat;
+      background-position: 0 -120px;
+      min-height: 650px;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      box-sizing: border-box;
+    }
+    
+    .container{
+      width: 350px;
+      background-color: white;
+      text-align: center;
+      border-radius: 20px;
+    }
+
+    .container .hero-img{
+      background-image: url(images/illustration-hero.svg);
+      background-size: cover;
+      border-radius: 20px 20px 0 0;
+      height: 170px;
+    }
+
+    .container .desc{
+      padding: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+
+    .container .desc .desc-title{
+      margin: 15px;
+      font-size: 24px;
+      font-weight: 900;
+      color: hsl(223, 47%, 23%);
+    }
+
+    .container .desc .desc-exp{
+      margin-top: 0;
+      font-size: 14px;
+      font-weight: 500;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .container .plan{
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      min-height: 60px;
+      padding: 10px;
+      background-color: hsl(225, 100%, 98%);
+      border-radius: 20px;
+    }
+
+    .container .plan .icon-music{
+      height: 48px;
+      width: 48px;
+      background-image: url(images/icon-music.svg);
+      background-size: cover;
+    }
+
+    .container .plan .plan-desc{
+      display: flex;
+      align-self: center;
+      flex-direction: column;
+      width: 120px;
+    }
+
+    .container .plan .plan-desc p{
+      margin: 0;
+      text-align: left;
+    }
+
+    .container .plan .plan-desc .plan-title{
+      font-weight: 700;
+    }
+
+    .container .plan .plan-desc .plan-price{
+      font-size: 14px;
+      font-weight: 500;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .container .plan a{
+      text-decoration: none;
+    }
+
+    .container .button{
+      background-color: hsl(245, 75%, 52%);
+      margin: 20px 0;
+      padding: 10px;
+      font-family: 'Red Hat Display', sans-serif;
+      color: white;
+      border: none;
+      border-radius: 10px;
+      box-shadow: 0 5px 20px hsl(224, 23%, 55%);
+    }
+
+    .container a.cancel{
+      text-decoration: none;
+      font-size: 14px;
+      font-weight: 700;
+      color: hsl(224, 23%, 55%);
+    }
+
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="hero-img"></div>
+    <div class="desc">
+      <p class="desc-title">Order Summary</p>
+      <p class="desc-exp">You can now listen to millions of songs, audiobooks, and podcasts on any device anywhere you like!</p>
+      <div class="plan">
+        <div class="icon-music"></div>
+        <div class="plan-desc">
+          <p class="plan-title">Annual Plan</p>
+          <p class="plan-price">$599.99/year</p>
+        </div>
+        <a href="#">Change</a>
+      </div>
+      <input type="submit" class="button" value="Proceed to Payment">
+      <a href="#" class="cancel">Cancel Order</a>
+    </div>
+  </div>
+  
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Abdullah Al-Karim</a>.
+  </div>
+</body>
+</html>
